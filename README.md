@@ -8,3 +8,10 @@ Dependencies:
 - Powershell
 - Chocolatey
 - pandoc/MIKTeX
+
+Running WSL 2.0 Ubuntu 20.04 on Windows 11
+sudo apt install pandoc texlive-latex-recommended texlive-xetex texlive-luatex pandoc-citeproc wkhtmltopdf
+
+pandoc --variable urlcolor=cyan resume.md -o resume.pdf
+pandoc resume.md -s -o resume.html
+pandoc resume.md -s -o resume.docx
